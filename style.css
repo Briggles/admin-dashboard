@@ -4,36 +4,127 @@ body {
     margin-right: 10vw;
     margin-top: 0px;
     margin-bottom: 0px;
+    font-family: 'Roboto', sans-serif;
+
 }
 
+ul {
+    list-style-type: none;
+    font-weight: 400;
+    line-height: 120%;
+    font-size: large;
+}
 .container {
     display: grid;
     background-color: white;
     grid-template: 150px 1fr / 250px 1fr;
-    height: 100vw;
+    min-height: 100vh;
 }
 
-.container>div {
+#header, #sidebar, #content {
     padding: 10px;
 }
 #header {
-    background-color: white;
+    background-color: #e0f2fe;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row: 1 2;
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
+    font-weight: 400;
+    font-size: large;
 }
 
+button {
+    background-color: #38bdf8;
+    border: 2px solid black;
+    border-radius: 10%;
+    color: white;
+    font-size: large;
+}
 #sidebar {
-    background-color: rgb(0, 145, 255);
+    background-color: #38bdf8;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
     color: white;
+    display: grid;
+    grid-template: 70px 150px 1fr / 1fr;
+    border-right: 2px solid orange;
 }
 
 #content {
-    background-color: rgb(231, 231, 231);
+    background-color: #0369a1;
     grid-column-start: 2;
     grid-row-start: 2;
+    display: grid;
+    grid-template: 1fr / 2fr 1fr;
+    border-top: 2px solid orange;
+}
+
+.contentHead {
+    color: white;
+}
+#headerBtns {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+#search {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#userInfo {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#userHead {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#projects {
+    display: grid;
+    grid-template: 50px 1fr 1fr 1fr / 1fr 1fr;
+}
+
+#announce {
+    display: grid;
+    grid-template: 50px 1fr / 1fr;
+}
+
+.projectCard {
+    border: 2px solid black;
+    border-left: 10px solid orange;
+    border-radius: 5%;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.contentHead {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+.rightCard {
+    border: 2px solid black;
+    border-radius: 5%;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.trend {
+    padding: 10px;
 }

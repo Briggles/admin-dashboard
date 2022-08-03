@@ -6,12 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        </style>
 </head>
 <body>
     <div class="container">
-        <div id="header"><h1>Header</h1></div>
-        <div id="sidebar"><h1>Dashboard</h1></div>
-        <div id="content"><h1>Your Projects</h1></div>
+        <header id="header">
+            <div id="search">
+                <input>Search Here! 
+            </div>
+            <div id="userInfo">Hi there, Morgan Oakley (@morgan)</div>
+            <div id="headerBtns">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
+            <div id="userHead">Morgan Oakley</div>
+        </header>
+        <nav id="sidebar">
+            <div id = "logo">
+            <h1>Dashboard</h1></div>
+            <div id = "topNav">
+                <ul>
+                    <li>Home</li>
+                    <li>Profile</li>
+                    <li>Messages</li>
+                    <li>History</li>
+                    <li>Tasks</li>
+                    <li>Communities</li>
+                </ul>
+            </div>
+            <div id = "botNav">
+                <ul>
+                    <li>Settings</li>
+                    <li>Support</li>
+                    <li>Privacy</li>
+                </ul>
+            </div>
+        </nav>
+        <main id="content">
+            <div id="projects">
+                <div class="contentHead"><h2>Your Projects</h2></div>
+                <div class="projectCard">
+                    <h3>Super Cool Project</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare mi ac felis 
+                        luctus, id semper tortor rutrum. 
+                    </p>
+                </div>
+                <div class="projectCard">
+                    <h3>Less Cool Project</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare mi ac felis 
+                        luctus, id semper tortor rutrum. </p>
+                </div>
+                <div class="projectCard">
+                    <h3>Impossible App</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare mi ac felis 
+                        luctus, id semper tortor rutrum. </p>
+                </div>
+                <div class="projectCard">
+                    <h3>Easy Peasy App</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare mi ac felis 
+                        luctus, id semper tortor rutrum. </p>
+                </div>
+                <div class="projectCard">
+                    <h3>Ad Blocker</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare mi ac felis 
+                        luctus, id semper tortor rutrum. </p>
+                </div>
+                <div class="projectCard">
+                    <h3>Money Maker</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare mi ac felis 
+                        luctus, id semper tortor rutrum. </p>
+                </div>
+            </div>
+            <div id="announce">
+                <div class="contentHead"><h2>Announcements</h2></div>
+                <div class="rightCard">
+                    <h3>Site Maintenance</h3>
+                    blahblah blah blahblah
+                    <hr>
+                    <h3>Community Share Day</h3>
+                    blahblah blah blahblah
+                    <hr>
+                    <h3>Updated Privacy Policy</h3>
+                    blah blah blahblah
+                </div>
+                <div class="contentHead"><h2>Trending</h2></div>
+                <div class="rightCard" id="trending">
+                    <div class="trend">@tegan <br>
+                    World Peace Builder</div>
+                    <div class="trend">
+                        @morgan<br>
+                        Super Cool Project
+                    </div>
+                    <div class="trend">
+                        @kendall<br>
+                        Life Changing App
+                    </div>
+                    <div class="trend">
+                        @alex<br>
+                        No Traffic Maker
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
 </body>
 </html>
